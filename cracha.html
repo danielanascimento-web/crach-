@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Crachá</title>
+    <link rel="stylesheet" href="cracha.css">
+</head>
+<body>
+    <div class="card">
+        <!-- FORMULÁRIO -->
+        <div class="form-section">
+            <h1>Gerador de Crachá</h1>
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="cargo" placeholder="Cargo">
+            <select id="departamento">
+                <option value="">Selecione Departamento</option>
+                <option value="Design">Design</option>
+                <option value="Desenvolvimento">Desenvolvimento</option>
+            </select>
+            <button id="btn-gerar">Gerar Crachá</button>
+        </div>
+
+        <!-- CRACHÁ -->
+        <div class="badge-section">
+            <div id="badge">
+                <p><strong>Nome:</strong> <span id="badge-nome">-</span></p>
+                <p><strong>Cargo:</strong> <span id="badge-cargo">-</span></p>
+                <p><strong>Depto:</strong> <span id="badge-departamento">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="cracha.js"></script>
+</body>
+</html>
